@@ -14,10 +14,10 @@ import (
 type LimiterRequest struct {
 	Name        string `json:"name"`
 	Type        string `json:"type"` // e.g., "token-bucket"
-	Capacity    int64  `json:"capacity"`
-	RefillRate  int64  `json:"refill_rate"`
-	RefillEvery int64  `json:"refill_every"` // seconds
-	TTL         int64  `json:"ttl"`          // seconds
+	Capacity    int  `json:"capacity"`
+	RefillRate  int  `json:"refill_rate"`
+	RefillEvery int  `json:"refill_every"` // seconds
+	TTL         int  `json:"ttl"`          // seconds
 }
 
 // AdminLimitersHandler handles POST /admin/limiters
